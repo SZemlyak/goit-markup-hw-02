@@ -247,3 +247,62 @@ h3 {
 .address li {
   margin: 10px 0;
 }
+
+/* PORTFOLIO */
+
+.main {
+  width: 1170px;
+  margin: 95px auto 65px;
+}
+
+.main__link {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 45px;
+}
+.main__link li {
+  margin-right: 12px;
+}
+
+.main__info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  padding-left: 0px;
+}
+
+.main__info li {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  border: 1px solid #efefef;
+}
+
+.main__info h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.06em;
+  color: #212121;
+  margin-left: 24px;
+}
+
+.main__info p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin-left: 24px;
+}
+
+.main__link__all {
+  padding: 6px 22px;
+  background: #2196f3;
+  border-radius: 5px;
+}
+
+.main__link__other {
+  padding: 6px 22px;
+  background: #f5f4fa;
+  border-radius: 5px;
+}

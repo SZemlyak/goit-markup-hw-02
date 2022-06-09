@@ -1,10 +1,8 @@
-body {
+/* body {
   margin: 0;
   font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
-
-  /* background-color: rgb(218, 223, 221); */
 }
 a,
 p {
@@ -82,7 +80,7 @@ li {
 
 .header__tel__ff {
   margin-left: 50px;
-}
+} */
 
 .main {
   width: 1170px;
@@ -93,9 +91,6 @@ li {
   display: flex;
   justify-content: center;
   margin-bottom: 45px;
-
-  /* margin-left: 400px;
-  margin-bottom: 30px; */
 }
 .main__link li {
   margin-right: 12px;
