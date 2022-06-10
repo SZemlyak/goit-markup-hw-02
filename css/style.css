@@ -1,8 +1,7 @@
 body {
-  margin: 0;
-  font-family: "Roboto";
-  font-weight: 500;
-  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
   /* background-color: rgb(218, 223, 221); */
 }
 a,
@@ -19,23 +18,38 @@ ul,
 li {
   list-style: none;
 }
+
+:root {
+  --primary-color: #000;
+  --secondary-color: #fff;
+  --link-hover-color: #2196f3;
+  --address-color: #757575;
+  --adress-opacity-color: rgba(255, 255, 255, 0.6);
+  --link-color: #212121;
+  --background-order-color: #2f303a;
+  --shadow-button-color: rgba(0, 0, 0, 0.15);
+  --button-hover-color: #0660aa;
+  --teams-bg-color: #f5f4fa;
+  --portfolio-main-color: #efefef;
+}
+
 .color__blue {
-  color: #2196f3;
+  color: var(--link-hover-color);
 }
 
 .color__white {
-  color: #fff;
+  color: var(--secondary-color);
 }
 
 .color__black {
-  color: #000;
+  color: var(--primary-color);
 }
 
 .color__grey {
-  color: #757575;
+  color: var(--address-color);
 }
 .color__white__opacity {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--adress-opacity-color);
 }
 
 .header {
@@ -61,7 +75,7 @@ li {
   width: 294px;
   font-weight: 700;
   margin: 32px 0;
-  color: #212121;
+  color: var(--link-color);
   justify-content: space-between;
 }
 
@@ -75,9 +89,7 @@ li {
 
 .header__info__hover:hover,
 .address__info__hover:hover {
-  color: #2196f3;
-  border: 1px solid #2196f3;
-  border-radius: 10px;
+  color: var(--link-hover-color);
 }
 
 .header__tel__ff {
@@ -89,7 +101,7 @@ li {
   height: 600px;
   left: 0px;
   top: 80px;
-  background-color: #2f303a;
+  background-color: var(--background-order-color);
   margin: 0 auto;
 }
 
@@ -101,7 +113,7 @@ li {
   text-align: center;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--secondary-color);
   width: 696px;
   margin: 0 452px 30px 452px;
   padding-top: 200px;
@@ -111,10 +123,10 @@ li {
   width: 200px;
   height: 50px;
   margin: auto 700px;
-  background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background: var(--link-hover-color);
+  box-shadow: 0px 4px 4px var(--shadow-button-color);
   border-radius: 4px;
-  color: white;
+  color: var(--secondary-color);
   font-weight: 700;
   cursor: pointer;
   font-family: "Roboto";
@@ -122,8 +134,8 @@ li {
 }
 
 button:hover {
-  color: rgba(255, 255, 255, 0.6);
-  background: #0660aa;
+  color: var(--shadow-button-color);
+  background: var(--button-hover-color);
 }
 
 .skills {
@@ -149,25 +161,23 @@ h3 {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--address-color);
 }
 
 .skills__company h3 {
   font-weight: 700;
   text-transform: uppercase;
-  color: #212121;
+  color: var(--link-color);
 }
 
 .skills__work__header {
   text-align: center;
-
+  font-style: normal;
   padding-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--link-color);
 }
 
 .skills__work__img {
@@ -183,7 +193,7 @@ h3 {
 
 .our__teams {
   width: 1600px;
-  background: #f5f4fa;
+  background: var(--teams-bg-color);
   margin: 0 auto;
 }
 
@@ -192,10 +202,10 @@ h3 {
   font-size: 36px;
   line-height: 42px;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--link-color);
   text-align: center;
   padding-top: 94px;
+  font-style: normal;
 }
 
 .our__teams__info {
@@ -214,7 +224,7 @@ h3 {
   line-height: 19px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--link-color);
 }
 
 .our__teams p {
@@ -223,12 +233,12 @@ h3 {
   line-height: 19px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--address-color);
 }
 
 .footer {
   width: 1600px;
-  background: #2f303a;
+  background: var(--background-order-color);
   padding: 60px 0;
   margin: 0 auto;
 }
@@ -261,7 +271,7 @@ h3 {
 /* PORTFOLIO */
 
 .header__info__color {
-  color: #2196f3;
+  color: var(--link-hover-color);
 }
 
 .main {
@@ -289,12 +299,12 @@ h3 {
   line-height: 26px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--link-color);
 }
 
 .main__button:hover {
-  background: #2196f3;
-  color: #fff;
+  background: var(--link-hover-color);
+  color: var(--secondary-color);
   cursor: pointer;
 }
 
@@ -308,15 +318,15 @@ h3 {
 .main__info li {
   margin-right: 30px;
   margin-bottom: 30px;
-  border: 1px solid #efefef;
+  border: 1px solid var(--portfolio-main-color);
 }
 
-.main__info h3 {
+.main__info h2 {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0.06em;
-  color: #212121;
+  color: var(--link-color);
   margin-left: 24px;
 }
 
@@ -325,18 +335,18 @@ h3 {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--address-color);
   margin-left: 24px;
 }
 
 .main__link__all {
   padding: 6px 22px;
-  background: #2196f3;
+  background: var(--link-hover-color);
   border-radius: 5px;
 }
 
 .main__link__other {
   padding: 6px 22px;
-  background: #f5f4fa;
+  background: var(--teams-bg-color);
   border-radius: 5px;
 }
