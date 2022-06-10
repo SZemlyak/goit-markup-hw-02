@@ -12,6 +12,7 @@ p {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 ul,
@@ -50,6 +51,7 @@ li {
 .header__logo {
   margin: 25px 93px 25px 215px;
   font-weight: 700;
+  font-family: "Raleway";
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
@@ -71,10 +73,10 @@ li {
   margin-left: 331px;
 }
 
-.header__mail:hover,
-.studio:hover {
-  color: #06508c;
-  border: 1px solid #054377;
+.header__info__hover:hover,
+.address__info__hover:hover {
+  color: #2196f3;
+  border: 1px solid #2196f3;
   border-radius: 10px;
 }
 
@@ -115,6 +117,8 @@ li {
   color: white;
   font-weight: 700;
   cursor: pointer;
+  font-family: "Roboto";
+  letter-spacing: 0.08em;
 }
 
 button:hover {
@@ -232,7 +236,7 @@ h3 {
 .footer__logo {
   width: 145px;
   padding-left: 215px;
-
+  font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
@@ -242,6 +246,12 @@ h3 {
 .address {
   padding-left: 175px;
   margin: 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
 }
 
 .address li {
@@ -249,6 +259,10 @@ h3 {
 }
 
 /* PORTFOLIO */
+
+.header__info__color {
+  color: #2196f3;
+}
 
 .main {
   width: 1170px;
@@ -262,6 +276,28 @@ h3 {
 }
 .main__link li {
   margin-right: 12px;
+}
+
+.main__button {
+  padding: 6px 22px;
+  border: none;
+  border-radius: 5px;
+  font-family: "Roboto";
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+
+.main__button:hover {
+  background: #2196f3;
+  color: #fff;
+  cursor: pointer;
 }
 
 .main__info {
