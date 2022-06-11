@@ -6,7 +6,7 @@ body {
 }
 a,
 p {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 a {
@@ -73,10 +73,11 @@ li {
 
 .header__link__info {
   width: 294px;
-  font-weight: 700;
+  font-weight: 500;
   margin: 32px 0;
   color: var(--link-color);
   justify-content: space-between;
+  font-size: 14px;
 }
 
 .header ul {
@@ -85,10 +86,15 @@ li {
 .header__personal__info {
   margin-top: 32px;
   margin-left: 331px;
+  font-weight: 500;
 }
 
 .header__info__hover:hover,
 .address__info__hover:hover {
+  color: var(--link-hover-color);
+}
+
+.header__mail {
   color: var(--link-hover-color);
 }
 
@@ -130,7 +136,8 @@ li {
   font-weight: 700;
   cursor: pointer;
   font-family: "Roboto";
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
+  line-height: 30px;
 }
 
 button:hover {
@@ -251,6 +258,7 @@ h3 {
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
+  color: var(--secondary-color);
 }
 
 .address {
@@ -262,6 +270,10 @@ h3 {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
+}
+
+.address__info__hover {
+  font-size: 14px;
 }
 
 .address li {
@@ -296,7 +308,7 @@ h3 {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--link-color);
@@ -324,7 +336,7 @@ h3 {
 .main__info h2 {
   font-weight: 700;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 1.33;
   letter-spacing: 0.06em;
   color: var(--link-color);
   margin-left: 24px;
@@ -333,7 +345,7 @@ h3 {
 .main__info p {
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: 0.03em;
   color: var(--address-color);
   margin-left: 24px;
